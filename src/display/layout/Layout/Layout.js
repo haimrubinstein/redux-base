@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import Nav from "../Nav/Nav";
 import {BrowserRouter as Router, Route, Switch,} from "react-router-dom";
-import Feed from "../../screens/Feed/Feed";
+import Feeds from "../../screens/Feeds/Feeds";
 import Home from "../../screens/Home/Home";
 import PrivateRoute from "../../../services/PrivateRoute";
 import Login from "../../screens/Login/Login";
 import * as routes from '../../../config/route.config'
-import LayoutStyle from './Layout.css';
+import './Layout.css';
 
 class Layout extends Component {
 
@@ -19,7 +19,7 @@ class Layout extends Component {
                     <div className={'site-content'}>
                         <Switch>
                             <PrivateRoute path={routes.FEED_ROUTE}>
-                                <Feed/>
+                                <Feeds/>
                             </PrivateRoute>
                             <Route path={routes.LOGIN_ROUTE}>
                                 <Login/>

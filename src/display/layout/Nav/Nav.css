@@ -1,0 +1,43 @@
+
+.navContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 65px;
+    background-color: #ececec;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navContainer ul {
+    margin: 0;
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.navContainer ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 15px;
+    font-size: 20px;
+    background: -webkit-linear-gradient(#eee, #00126d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navContainer ul li:hover {
+    background: #dedede;
+    -webkit-text-fill-color: #fff;
+    text-underline: none;
+}
+
+.navContainer a {
+    text-decoration: none;
+}
